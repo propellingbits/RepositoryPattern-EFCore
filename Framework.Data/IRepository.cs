@@ -6,17 +6,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Framework.Data
 {
-    public interface IRepository<TEntity> where TEntity : class
+    public interface IRepository<TEntity> : IDisposable where TEntity : class
     {        
-        void Insert(TEntity entity);
+        TEntity Insert(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);
-        Task<int> CountAsync(Expression<Func<TEntity, bool>> where = null);
+        Task<int> GetCountAsync(Expression<Func<TEntity, bool>> where = null);
         //paging
-        IEnumerable<TEntity> GetPage(params Expression<Func<TEntity, object>>[] includeProperties);
-        IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> where, params Expression<Func<TEntity, object>>[] includeProperties);
-        //todo - do we have really have to expose this
-        DbContext DbContext { get; }
+        IEnumerable<TEntity> GetPage(int pageIndex = 0, int pageSize = 30, params Expression<Func<TEntity, object>>[] includeProperties);
+        IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> query, params Expression<Func<TEntity, object>>[] includeProperties);        
         //todo - provide return type
         void Validate();
     }
