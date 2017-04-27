@@ -24,7 +24,10 @@ namespace Framework.Data.EntityFramework
         
         public async Task<int> GetCountAsync(Expression<Func<TEntity, bool>> where = null)
         {
-            return await _dbSet.CountAsync(where);            
+            if(where == null)
+                return await _dbSet.CountAsync();
+            else
+                return await _dbSet.CountAsync(where);
         }
 
         public void Delete(TEntity entity)

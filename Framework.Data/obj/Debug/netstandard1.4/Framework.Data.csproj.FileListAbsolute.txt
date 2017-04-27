@@ -1,7 +1,7 @@
 J:\Mandeep\Projects\Framework\Framework.Data\bin\Debug\netstandard1.4\Framework.Data.deps.json
 J:\Mandeep\Projects\Framework\Framework.Data\bin\Debug\netstandard1.4\Framework.Data.dll
-J:\Mandeep\Projects\Framework\Framework.Data\obj\Debug\netstandard1.4\Framework.Data.csprojResolveAssemblyReference.cache
-J:\Mandeep\Projects\Framework\Framework.Data\obj\Debug\netstandard1.4\Framework.Data.AssemblyInfo.cs
 J:\Mandeep\Projects\Framework\Framework.Data\bin\Debug\netstandard1.4\Framework.Data.pdb
+J:\Mandeep\Projects\Framework\Framework.Data\obj\Debug\netstandard1.4\Framework.Data.AssemblyInfo.cs
 J:\Mandeep\Projects\Framework\Framework.Data\obj\Debug\netstandard1.4\Framework.Data.dll
 J:\Mandeep\Projects\Framework\Framework.Data\obj\Debug\netstandard1.4\Framework.Data.pdb
+J:\Mandeep\Projects\Framework\Framework.Data\obj\Debug\netstandard1.4\Framework.Data.csprojResolveAssemblyReference.cache

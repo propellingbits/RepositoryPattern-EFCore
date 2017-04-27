@@ -1,7 +1,7 @@
 J:\Mandeep\Projects\Framework\Framework.Data.Test.DomainModel\bin\Debug\netstandard1.4\Framework.Data.Test.DomainModel.deps.json
 J:\Mandeep\Projects\Framework\Framework.Data.Test.DomainModel\bin\Debug\netstandard1.4\Framework.Data.Test.DomainModel.dll
 J:\Mandeep\Projects\Framework\Framework.Data.Test.DomainModel\bin\Debug\netstandard1.4\Framework.Data.Test.DomainModel.pdb
-J:\Mandeep\Projects\Framework\Framework.Data.Test.DomainModel\obj\Debug\netstandard1.4\Framework.Data.Test.DomainModel.csprojResolveAssemblyReference.cache
 J:\Mandeep\Projects\Framework\Framework.Data.Test.DomainModel\obj\Debug\netstandard1.4\Framework.Data.Test.DomainModel.AssemblyInfo.cs
 J:\Mandeep\Projects\Framework\Framework.Data.Test.DomainModel\obj\Debug\netstandard1.4\Framework.Data.Test.DomainModel.dll
 J:\Mandeep\Projects\Framework\Framework.Data.Test.DomainModel\obj\Debug\netstandard1.4\Framework.Data.Test.DomainModel.pdb
+J:\Mandeep\Projects\Framework\Framework.Data.Test.DomainModel\obj\Debug\netstandard1.4\Framework.Data.Test.DomainModel.csprojResolveAssemblyReference.cache

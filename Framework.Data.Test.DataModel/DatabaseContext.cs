@@ -16,10 +16,9 @@ namespace Framework.Data.Test.DataModel
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
+            base.OnModelCreating(modelBuilder);            
             modelBuilder.Entity<Dealer>()
-            .ToTable("dealer");
+            .ToTable("dealer").HasKey(d => d.Id);
 
         }
     }
