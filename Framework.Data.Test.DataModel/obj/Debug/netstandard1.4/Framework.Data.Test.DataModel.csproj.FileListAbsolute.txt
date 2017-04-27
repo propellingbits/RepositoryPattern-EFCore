@@ -1,0 +1,7 @@
+J:\Mandeep\Projects\Framework\Framework.Data.Test.DataModel\bin\Debug\netstandard1.4\Framework.Data.Test.DataModel.deps.json
+J:\Mandeep\Projects\Framework\Framework.Data.Test.DataModel\bin\Debug\netstandard1.4\Framework.Data.Test.DataModel.dll
+J:\Mandeep\Projects\Framework\Framework.Data.Test.DataModel\obj\Debug\netstandard1.4\Framework.Data.Test.DataModel.csprojResolveAssemblyReference.cache
+J:\Mandeep\Projects\Framework\Framework.Data.Test.DataModel\obj\Debug\netstandard1.4\Framework.Data.Test.DataModel.AssemblyInfo.cs
+J:\Mandeep\Projects\Framework\Framework.Data.Test.DataModel\bin\Debug\netstandard1.4\Framework.Data.Test.DataModel.pdb
+J:\Mandeep\Projects\Framework\Framework.Data.Test.DataModel\obj\Debug\netstandard1.4\Framework.Data.Test.DataModel.dll
+J:\Mandeep\Projects\Framework\Framework.Data.Test.DataModel\obj\Debug\netstandard1.4\Framework.Data.Test.DataModel.pdb
