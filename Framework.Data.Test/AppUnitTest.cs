@@ -22,19 +22,36 @@ namespace Framework.Data.Test
         }
 
         [TestMethod]
-        public void CanRetrieveADealer()
+        public void CanFindADealer()
         {
             using (var context = new DatabaseContext(_options))
             {
                 var repository = new EfRepository<Dealer>(context);
-                var dealers = repository.Find(d => d.Name == "Dealer 1");                
+                var dealers = repository.Find(d => d.Name == "Dealer 1");
                 Assert.AreEqual(1, dealers.Count());
                 repository.Dispose();
             }
         }
 
         [TestMethod]
-        public void CanRetrieveTotalNumberOfDealers()
+        public void CanUpdateADealer()
+        {
+            string updatedDealerName = "Dealer 1 Updated";
+
+            using (var context = new DatabaseContext(_options))
+            {                
+                var repository = new EfRepository<Dealer>(context);
+                var dealer1 = repository.Find(d => d.Name == "Dealer 1").First();
+                dealer1.Name = updatedDealerName;
+                repository.Update(dealer1);
+                var updatedDealer = repository.Find(d => d.Name == updatedDealerName).First();
+                Assert.AreEqual(updatedDealerName, updatedDealer.Name);
+                repository.Dispose();
+            }
+        }       
+
+        [TestMethod]
+        public void CanCountTotalNumberOfDealers()
         {
             using (var context = new DatabaseContext(_options))
             {
@@ -42,6 +59,27 @@ namespace Framework.Data.Test
                 var dealerTask = repository.GetCountAsync();
                 dealerTask.Wait();
                 Assert.AreEqual(2, dealerTask.Result);
+                repository.Dispose();
+            }
+        }
+
+        [TestMethod]
+        public void CanInsertADealer()
+        {
+            var dealer = new Dealer
+            {               
+                Id = 3,
+                Name = "Dealer 3",
+                Code = "001"
+
+            };
+
+            using (var context = new DatabaseContext(_options))
+            {
+                var repository = new EfRepository<Dealer>(context);
+                repository.Insert(dealer);
+                var dealerResult= repository.Find(d => d.Name == dealer.Name).FirstOrDefault();
+                Assert.AreEqual(dealer.Id, dealerResult.Id);
                 repository.Dispose();
             }
         }
